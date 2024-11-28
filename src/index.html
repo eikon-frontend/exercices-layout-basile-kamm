@@ -36,14 +36,29 @@
     <!-- Ajoutez ici la structure HTML -->
     <header class="header-container">
       <a class="header-logo"> </a>
-      <div class="header-links">
+      <nav class="header-links desktop">
         <a href="" class="header-link">Acceuil</a>
         <a href="" class="header-link">A propos</a>
         <a href="" class="header-link">Nous contacter</a>
+        <a href="" class="header-link img">
+          <img src="img/icon.png" alt="" />
+        </a>
+      </nav>
+      <nav class="header-links mobile">
         <a href="" class="header-link">
           <img src="img/icon.png" alt="" />
         </a>
-      </div>
+        <div class="header-burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="header-burger-links hidden">
+          <a href="" class="header-link">Accueil</a>
+          <a href="" class="header-link">A propos</a>
+          <a href="" class="header-link">Nous contacter</a>
+        </nav>
+      </nav>
     </header>
 
     <div class="guideline-container">

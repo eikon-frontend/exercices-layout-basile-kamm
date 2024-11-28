@@ -21,10 +21,60 @@
 
 .header-links {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
+  position: relative;
 }
 
 .header-link {
   text-decoration: none;
+}
+
+.header-burger-links {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 85px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.header-burger {
+  cursor: pointer;
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .bar {
+    background: black;
+    height: 3px;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
